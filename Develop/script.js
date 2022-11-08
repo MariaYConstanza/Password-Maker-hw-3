@@ -51,7 +51,30 @@ function generatePassword() {
     var confirmLowerCase = window.prompt("Confirm if you would like to add lower case values, than press OK");
     var confirmUpperCase = window.prompt("Confirm if you would like to ass upper case values, than press OK");
   }
+
+  var passCharacters = []
+
+  if (confirmNumber) {
+    passCharacters = passCharacters.concat(number)
+  }
+
+  if (confirmSpecial) {
+    passCharacters = passCharacters.concat(special)
+  }
+
+  if (confirmLowerCase) {
+    passCharacters = passCharacters.concat(lowerCase)
+  }
+
+  if (confirmUpperCase) {
+    passCharacters = passCharacters.concat(upperCase)
+  }
+
+  console.log(passCharacters)
+
 }
+
+
 
 
 
