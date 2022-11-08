@@ -11,7 +11,7 @@ As a developer I should be able to generate a secured password by prompting a qu
 ![password generator](https://user-images.githubusercontent.com/112887914/200456409-2f0bdbe1-49f6-4cfe-905a-ad9e250308ce.png)
 
 ## Deploy
-live Site : https://mariayconstanza.github.io/password-generator/
+Live Site : https://mariayconstanza.github.io/password-generator/
 
 ## Licenses
 N/A
