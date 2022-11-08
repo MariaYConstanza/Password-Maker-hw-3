@@ -37,6 +37,12 @@ function generatePassword() {
 
   window.alert(`Your password will now have ${confirmLength} of character.`);
 
+  // decalrations 
+  var confirmNumber = window.prompt("Confirm if you would like to add numeric values, than press OK");
+  var confirmSpecial = window.prompt("Confirm if you would like to add special values, than press OK");
+  var confirmLowerCase = window.prompt("Confirm if you would like to add lower case values, than press OK");
+  var confirmUpperCase = window.prompt("Confirm if you would like to add upper case values, than press OK");
+
   // comfirm characters array
   if (confirmNumber === false && confirmSpecial === false && confirmLowerCase === false && confirmUpperCase === false) {
     window.alert("Your password must contain these following values to create your password.");
