@@ -28,7 +28,7 @@ var confirmUpperCase;
 function generatePassword() {
   var confirmLength = window.prompt("Confirm character length amount between 8-28 and press OK to continue.");
 
-  if (confirmLength <= 8 || confirmLength >= 28){
+  if (confirmLength <= 7 || confirmLength >= 29){
     window.alert("Password length must be bewteen 8-28 characters. Please try again and press OK.");
     var confirmLength = window.prompt("Confirm character length amount between 8-28 and press OK to continue.")
   }
