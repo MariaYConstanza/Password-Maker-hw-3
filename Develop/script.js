@@ -26,21 +26,22 @@ var confirmLowerCase;
 var confirmUpperCase;
 
 function generatePassword() {
-  var confirmLength = window.prompt("Confirm character length amount between 8-128 and press OK to continue.");
+  var confirmLength = window.prompt("Confirm character length amount between 8-28 and press OK to continue.");
 
   if (confirmLength <= 8 || confirmLength >= 28){
     window.alert("Password length must be bewteen 8-28 characters. Please try again and press OK.");
-    var confirmLength = window.prompt("Confirm character length amount between 8-128 and press OK to continue.")
+    var confirmLength = window.prompt("Confirm character length amount between 8-28 and press OK to continue.")
   }
 
-  window.alert("Your password will now have ${confirmLength} of character.");
+  window.alert(`Your password will now have ${confirmLength} of character.`);
 
-  var confirmNumber = window.prompt("Confirm if you would like to add numeric values, than press OK");
-  var confirmSpecial = window.prompt("Confirm if you would like to add special values, than press OK");
-  var confirmLowerCase = window.prompt("Confirm if you would like to add lower case values, than press OK");
-  var confirmUpperCase = window.prompt("Confirm if you would like to ass upper case values, than press OK");
-
-  if ()
+  if (confirmNumber === false && confirmSpecial === false && confirmLowerCase === false && confirmUpperCase === false) {
+    window.alert("Your password must contain these following values to create your password.");
+    var confirmNumber = window.prompt("Confirm if you would like to add numeric values, than press OK");
+    var confirmSpecial = window.prompt("Confirm if you would like to add special values, than press OK");
+    var confirmLowerCase = window.prompt("Confirm if you would like to add lower case values, than press OK");
+    var confirmUpperCase = window.prompt("Confirm if you would like to ass upper case values, than press OK");
+  }
 }
 
 
