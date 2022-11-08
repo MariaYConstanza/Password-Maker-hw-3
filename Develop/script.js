@@ -1,6 +1,6 @@
 // Assignment Code
 // var generateBtn =
- document.querySelector("#generate").addEventListener("click", writePassword);
+document.querySelector("#generate").addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
@@ -52,30 +52,18 @@ function generatePassword() {
     var confirmUpperCase = window.prompt("Confirm if you would like to ass upper case values, than press OK");
   }
 
-  var passCharacters = []
-
-  if (confirmNumber) {
-    passCharacters = passCharacters.concat(number)
-  }
-
-  if (confirmSpecial) {
-    passCharacters = passCharacters.concat(special)
-  }
-
-  if (confirmLowerCase) {
-    passCharacters = passCharacters.concat(lowerCase)
-  }
-
-  if (confirmUpperCase) {
-    passCharacters = passCharacters.concat(upperCase)
-  }
+  var passCharacters = number.concat(special, lowerCase, upperCase)
 
   console.log(passCharacters)
 
+  var generateRandomPass = ""
+
+  for (var i = 0; i < confirmLength; i++) {
+    generateRandomPass = generateRandomPass + passCharacters[Math.floor(Math.random() * passCharacters.length)];
+    console.log(generateRandomPass)
+  }
+  return generateRandomPass;
 }
-
-
-
 
 
 
