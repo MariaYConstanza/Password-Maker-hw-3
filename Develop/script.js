@@ -25,9 +25,11 @@ var confirmSpecial;
 var confirmLowerCase;
 var confirmUpperCase;
 
+// generating password function
 function generatePassword() {
   var confirmLength = window.prompt("Confirm character length amount between 8-28 and press OK to continue.");
 
+  // confirm length array
   if (confirmLength <= 7 || confirmLength >= 29){
     window.alert("Password length must be bewteen 8-28 characters. Please try again and press OK.");
     var confirmLength = window.prompt("Confirm character length amount between 8-28 and press OK to continue.")
@@ -35,6 +37,7 @@ function generatePassword() {
 
   window.alert(`Your password will now have ${confirmLength} of character.`);
 
+  // comfirm characters array
   if (confirmNumber === false && confirmSpecial === false && confirmLowerCase === false && confirmUpperCase === false) {
     window.alert("Your password must contain these following values to create your password.");
     var confirmNumber = window.prompt("Confirm if you would like to add numeric values, than press OK");
