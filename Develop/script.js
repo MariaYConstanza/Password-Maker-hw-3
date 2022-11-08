@@ -52,6 +52,7 @@ function generatePassword() {
     var confirmUpperCase = window.prompt("Confirm if you would like to ass upper case values, than press OK");
   }
 
+  // Generating random password array/decalration
   var passCharacters = number.concat(special, lowerCase, upperCase)
 
   console.log(passCharacters)
